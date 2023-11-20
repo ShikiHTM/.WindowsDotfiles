@@ -18,7 +18,6 @@ Plug 'https://github.com/voldikss/vim-floaterm' " Terminal
 call plug#end()
 
 " General Configuration
-
 set number
 set mouse=a
 set encoding=utf-8
@@ -96,3 +95,6 @@ inoremap <silent><expr> <Tab>
 " Floaterm
 nnoremap <silent>tt :FloatermNew<CR>
 nnoremap <silent><C-t> :FloatermToggle<CR>
+
+"disable autoComment in newline
+autocmd FileType * setlocal formatoptions-=cro
