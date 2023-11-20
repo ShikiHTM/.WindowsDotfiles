@@ -1,4 +1,4 @@
-	call plug#begin()
+call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree' " File Manager
 Plug 'https://github.com/sheerun/vim-polyglot' " Highlight
