@@ -1,0 +1,25 @@
+{
+  "clangd.path": "~\\AppData\\Local\\coc\\extensions\\coc-clangd-data\\install\\16.0.2\\clangd_16.0.2\\bin\\clangd.exe",
+    "suggest.completionItemKindLabels": {
+    "function": "  Function",
+    "method": "  Method",
+    "variable": "  Variable",
+    "constant": "  Constant",
+    "struct": "  Struct",
+    "class": "  Class",
+    "interface": "  Interface",
+    "text": "  Text",
+    "enum": "  Enum",
+    "enumMember": "  EnumMember",
+    "module": " {} Module",
+    "property": "  Property",
+    "field": "  Field",
+    "file": "  File",
+    "event": "  Event",
+    "folder": "  Folder",
+    "keyword": "  Keyword",
+    "snippet": "  Snippet",
+    "operator": "  Operator",
+    "default": ""
+  }
+}
