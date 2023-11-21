@@ -21,5 +21,6 @@
     "snippet": "  Snippet",
     "operator": "  Operator",
     "default": ""
-  }
+  },
+  "java.import.gradle.java.home": "C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot"
 }

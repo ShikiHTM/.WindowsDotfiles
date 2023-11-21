@@ -17,6 +17,9 @@ ${function:.....} = { Set-Location "..\..\..\.." }
 Set-Alias mkd CreateAndSet-Direction
 
 # Oh-my-posh
-$PATH_TO_THEME = 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/robbyrussell.omp.json'
+$PATH_TO_THEME = 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/catppuccin_macchiato.omp.json'
 oh-my-posh.exe init pwsh --config $PATH_TO_THEME | Invoke-Expression
 
+# Fzf
+Import-Module PSFzf
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'

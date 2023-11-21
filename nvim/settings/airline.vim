@@ -1,5 +1,4 @@
 " airline
-let g:airline_section_b='%{strftime("%c")}'
 let g:airline_section_y='%{&filetype}'
 let g:airline_section_z='%p%%  %l:%L'
 let g:airline_section_error = ''
