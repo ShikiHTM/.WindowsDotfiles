@@ -44,6 +44,16 @@ nnoremap <silent> <F5> :NERDTreeToggle<CR>
 nnoremap <silent>tt :FloatermNew<CR>
 nnoremap <silent><C-t> :FloatermToggle<CR>
 
+augroup visual_commenting
+    autocmd!
+    autocmd FileType c,cpp,java,rust  let b:comment_symbol = '//'
+    autocmd FileType vim              let b:comment_symbol = '"'
+    autocmd FileType sh,vim,python    let b:comment_symbol = '#'
+    autocmd FileType tex              let b:comment_symbol = '%'
+    autocmd BufEnter * silent! vnoremap <silent> <C-_> :<C-u>keepp '<,'>s@^@\=b:comment_symbol<CR>
+    autocmd BufEnter * silent! exec 'vnoremap <silent> <C-?> :<C-u>keepp ''<,''>s@^' . b:comment_symbol . '@<CR>'
+augroup END
+
 "disable autoComment in newline
 autocmd FileType * setlocal formatoptions-=cro
 

@@ -51,6 +51,19 @@ Write-Start -msg "Configuring Nvim..."
 	nvim -E -s -u "$($env:LOCALAPPDATA)\nvim\init.vim" +PlugInstall +PlugUpdate +q
 Write-Done
 
+Write-Start -msg "Configuring Visual Code Studio..."
+	$DestinationSettingsPath = "~\Appdata\Roaming\Code\User\"
+	$DestinationExtensionsPath = "~\.vscode\extensions"
+	if(-not(Test-Path $DestinationSettingsPath)) {
+		New-Item -ItemType Direction -Path $DestinationSettingsPath -Force
+	}
+	if(-not(Test-Path $DestinationExtensionsPath)) {
+		New-Item -ItemType Direction -Path $DestinationExtensionsPath -Force
+	}
+	Copy-Item ".\vsc\settings\*" -Destination $DestinationSettingsPath -Force
+	Copy-Item ".\vsc\extensions\*" -Destination $DestinationExtensionsPath -Force
+Write-Done
+
 # Oh my posh
 Write-Start -msg "Installing Oh-My-Posh..."
 if(Get-Command oh-my-posh -ErrorAction SilentlyContinue) {

@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 17,
+    "glassit.alpha": 220,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "git.autofetch": true,
+    "editor.fontFamily": "'NotoMono Nerd Font', 'Courier New', monospace",
+    "bracket-pair-colorizer-2.depreciation-notice": false
+}
